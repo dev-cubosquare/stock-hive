@@ -508,7 +508,7 @@ footer .copyright {
 }
 .main__content h4,
 .main__content p {
-  margin: 0.2rem;
+  margin: 0.2rem auto;
 }
 .main__illustration {
   display: flex;
@@ -545,7 +545,7 @@ footer .copyright {
   padding-bottom: 1rem;
 }
 .main__balance .value {
-  margin: auto 0 0.8rem;
+  margin: 0;
 }
 .main__balance .wallet-footer {
   position: absolute;
