@@ -516,6 +516,10 @@ footer .copyright {
   align-items: center;
   flex-direction: column;
   padding: 1vw;
+  max-width: 500px;
+}
+.main__illustration img {
+  width: 100%;
 }
 @media (max-width: 768px) {
   .main__illustration {
@@ -553,7 +557,7 @@ footer .copyright {
 }
 
 .form__content {
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
   padding: 1vw;
@@ -577,7 +581,7 @@ footer .copyright {
   --background-color: #f1f1f1;
   margin-left: 2.5rem;
   position: relative;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 @media (max-width: 768px) {
   .form__field {
