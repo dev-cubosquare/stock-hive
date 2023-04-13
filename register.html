@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - StockHive</title>
+  <title>Register - StockHive</title>
   <!--
     Project: StockHive
     File: login.html
@@ -18,14 +18,12 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body id="login-page">
-
-
+<body id="register-page">
   <header class="page-header">
     <div class="page-header__container">
       <div class="page-header__buttons">
         <a href="#" class="page-header__button btn btn--outline">Go Home</a>
-        <a href="#" class="page-header__button btn btn--dark">New User? Register here</a>
+        <a href="#" class="page-header__button btn btn--primary">Existing User? Login here</a>
       </div>
     </div>
   </header>
@@ -97,12 +95,12 @@
         <p>Artificial Intelligence, Smarter Investments</p>
       </div>
 
-      <a href="#" class="btn btn--primary-outline btn--mobile">New User? Register here</a>
+      <a href="#" class="btn btn--primary btn--mobile">Existing User? Login here</a>
 
       <div class="main__form">
         <h1 class="main__title">
-          <span>Welcome Back </span>
-          <span class="text--primary">StockHiver </span>
+          <span>Unlock Your </span>
+          <span class="text--primary">Investing Superpowers</span>
           <span>!</span>
         </h1>
         <h2 class="main__title--mobile h5 text--primary"><span>Login Now</span></h2>
@@ -111,16 +109,37 @@
 
             <div class="form__fields">
               <div class="form__field form__field--border">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <label for="name">
+                  <div class="hexagon hexagon--rotate">
+                    <div class="hexagon__content">
+                      <img src="./img/user-profile-check.svg" alt="">
+                    </div>
+                  </div>
+                  Name
+                </label>
+              </div>
+              <div class="form__field form__field--border">
                 <input type="email" name="email" id="email" placeholder="Email Id">
                 <label for="email">
-                  <label for="email">
-                    <div class="hexagon hexagon--rotate">
-                      <div class="hexagon__content">
-                        <img src="./img/envelope.svg" alt="">
-                      </div>
+                  <div class="hexagon hexagon--rotate">
+                    <div class="hexagon__content">
+                      <img src="./img/envelope.svg" alt="">
                     </div>
-                    Email
-                  </label>
+                  </div>
+                  Email
+                </label>
+              </div>
+              <div class="form__field form__field--border">
+                <input type="tel" name="phone" id="phone" placeholder="Phone">
+                <label for="phone">
+                  <div class="hexagon hexagon--rotate">
+                    <div class="hexagon__content">
+                      <img src="./img/call-icon.svg" alt="">
+                    </div>
+                  </div>
+                  Phone
+                </label>
               </div>
               <div class="form__field form__field--border">
                 <input type="password" name="password" id="password" placeholder="Password">
@@ -133,20 +152,46 @@
                   Password
                 </label>
               </div>
+              <div class="form__field form__field--border">
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password">
+                <label for="cpassword">
+                  <div class="hexagon hexagon--rotate">
+                    <div class="hexagon__content">
+                      <img src="./img/touch-id.svg" alt="">
+                    </div>
+                  </div>
+                  Confirm Password
+                </label>
+              </div>
+              <div class="form__field form__field--border">
+                <input type="text" name="code" id="code" placeholder="Your StochHive Unique Code ">
+                <label for="code">
+                  <div class="hexagon hexagon--rotate">
+                    <div class="hexagon__content">
+                      <img src="./img/emoji-fun.svg" alt="">
+                    </div>
+                  </div>
+                  Your StochHive Unique Code
+                </label>
+              </div>
 
               <div class="form__field-group">
                 <div class="form__field">
-                  <input type="checkbox" name="remember" id="remember">
-                  <label for="remember">
-                    <div class="hexagon"></div>
-                    Keep me signed in
-                  </label>
+                  <div class="agree"><input type="checkbox" name="terms" id="terms">
+                    <label for="terms">
+                      <div class="hexagon"></div>
+                      Terms & Conditions
+                    </label>
+                  </div>
+                  <div class="agree"><input type="checkbox" name="policy" id="policy">
+                    <label for="policy">
+                      <div class="hexagon"></div>
+                      Privacy Policy
+                    </label>
+                  </div>
                 </div>
                 <div class="form__action">
-                  <button class="btn btn--primary">Log In</button>
-                  <a href="#" class="link-img text--gray"><span>Forgot Password?</span>
-                    <img src="./img/Mask Happly.svg" alt="">
-                  </a>
+                  <button class="btn btn--primary">Register Now</button>
                 </div>
               </div>
             </div>
@@ -154,12 +199,18 @@
         </form>
       </div>
       <div class="main__illustration">
-        <h2 class="text--primary">Get ready to embark on an epic investing adventure powered by cutting-edge AI!</h2>
-        <p>StockHive's user-friendly platform is your ultimate sidekick, guiding you towards financial triumph. Log in
-          and let's conquer the market together!</p>
-        <img src="./img/Arranging Files.png" srcset="./img/Arranging Files.png 1x,
-                  ./img/Arranging Files@2x.png 2x,
-                  ./img/Arranging Files@3x.png 3x" alt="">
+        <h2><span class="text--primary">Join the Stock</span>Hive <span class="text--primary">Revolution!</span></h2>
+        <p>You're just one step away from unlocking the ultimate AI-powered investing experience! Register with
+          StockHive and step into a world of financial growth, tailored insights, and market mastery. Let's achieve
+          those investing goals together!</p>
+        <img src="./img/sign-up.png" srcset="./img/sign-up.png 1x,
+                  ./img/sign-up@2x.png 2x,
+                  ./img/sign-up@3x.png 3x" alt="">
+        <h4 class="text--primary">Note:</h4>
+        <p>By clicking register you hereby agree to the <a href="#" class="text--primary">Terms and Conditions</a> and
+          <a href="#" class="text--primary">Privacy Policy</a> of StockHive India Pvt.
+          Ltd and Bridgeweave.
+        </p>
 
       </div>
     </div>

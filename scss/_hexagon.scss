@@ -1,0 +1,147 @@
+/**
+ * Project: StockHive
+ * File: _hexagon.scss
+ * Author: Shahzar Mazhar
+ * Date: 2023-04-13
+ * Modified: 2023-04-13
+ * Description: This file contains the hexagon styles for the project and is imported in the main styles.scss file
+ * Version: 1.0.0
+ */
+
+.hexagon {
+  --size: 17.19vw;
+  --margin-y: calc(var(--size) * -0.175);
+  --margin-x: calc(var(--size) * -0.05);
+  width: var(--size);
+  height: calc(var(--size) * 1.15);
+  margin: var(--margin-y) var(--margin-x);
+  position: relative;
+  overflow: hidden;
+  filter: drop-shadow(0px 8px 3px rgba(0, 0, 0, 0.25));
+  color: #FFF;
+
+  &:not(:has(>a)) {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+
+  .item {
+
+
+    &__title {
+      font-weight: 500;
+      font-size: calc(var(--size) / 8);
+      margin: 0;
+      max-width: 80%;
+    }
+
+    &__text {
+      font-size: calc(var(--size) / 15);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    &__img {
+      height: calc(var(--size) / 5);
+      width: calc(var(--size) / 5);
+      border-radius: 50%;
+      overflow: hidden;
+      transition: filter var(--transition);
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+  }
+
+  >a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    height: 97%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  svg {
+    stroke: #000;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    @include transition(fill, transform);
+  }
+
+
+  &--yellow {
+    color: #000;
+
+    svg {
+      fill: $primary-color;
+    }
+  }
+
+  &--white {
+    color: #000;
+
+    svg {
+      fill: #FFFFFF;
+
+    }
+  }
+
+  &--gray svg {
+    fill: #666666
+  }
+
+  &--text-white {
+    color: #FFF;
+  }
+
+  &--large {
+    --size: 22.95vw;
+  }
+
+  &--medium {
+    --size: 15vw;
+  }
+
+  &--small {
+    --size: 7vw;
+  }
+
+  &--xsmall {
+    --size: 4.5vw;
+  }
+
+  &--xxsmall {
+    --size: 3.5vw;
+  }
+
+  &--hidden {
+    visibility: hidden;
+  }
+
+  &--rotate {
+
+    >a {
+      clip-path: polygon(25% 12.5%, 75% 12.5%, 100% 50%, 75% 87.5%, 25% 87.5%, 0 50%);
+      overflow: hidden;
+    }
+
+    svg {
+      transform: rotateZ(30deg);
+    }
+  }
+}

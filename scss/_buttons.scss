@@ -1,0 +1,74 @@
+/**
+ * Project: StockHive
+ * File: _buttons.scss
+ * Author: Shahzar Mazhar
+ * Date: 2023-04-13
+ * Modified: 2023-04-13
+ * Description: This file contains the button styles for the project and is imported in the main styles.scss file
+ * Version: 1.0.0
+ */
+
+.btn {
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 0.6em 2.5em;
+  display: inline-block;
+  cursor: pointer;
+  background-color: $tertiary-color;
+  @include transition(background-color, color, border-color);
+  white-space: nowrap;
+
+  &:hover {
+    background-color: darken($tertiary-color, 5%);
+  }
+
+  &--primary {
+    background-color: $primary-color;
+    color: white;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      background-color: darken($primary-color, 5%);
+    }
+  }
+
+  &--primary-outline {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+  &--mobile {
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $primary-color;
+
+    &:hover {
+      border-color: $primary-color;
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+  &--dark {
+    background-color: $secondary-color;
+    color: white;
+
+    &:hover {
+      background-color: lighten($secondary-color, 10%);
+    }
+  }
+
+}

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - StockHive</title>
+  <title>Profile - StockHive</title>
   <!--
     Project: StockHive
     File: login.html
@@ -18,14 +18,12 @@
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body id="login-page">
-
-
+<body id="profile-page">
   <header class="page-header">
     <div class="page-header__container">
+      <div class="page-header__title h2">John Doe's Profile Summary:</div>
       <div class="page-header__buttons">
-        <a href="#" class="page-header__button btn btn--outline">Go Home</a>
-        <a href="#" class="page-header__button btn btn--dark">New User? Register here</a>
+        <a href="#" class="page-header__button btn btn--outline">Logout</a>
       </div>
     </div>
   </header>
@@ -82,84 +80,99 @@
 
   <main class="main__container">
     <div class="main__content">
-
-      <div class="main__header--mobile">
-
-        <a href="#" class="main__back-link">
-          <img src="./img/Login.svg" alt="">
-        </a>
-
-        <div class="main__logo">
-          <img src="./img/StockHive-logo 1.png" alt="" srcset="./img/StockHive-logo 1.png 1x,
-            ./img/StockHive-logo 1@2x.png 2x,
-            ./img/StockHive-logo 1@3x.png 3x">
+      <div class="main__profile">
+        <h2><span class="text--primary">Hey</span><span> John Doe!</h2>
+        <div class="card">
+          <table>
+            <tbody>
+              <tr>
+                <th scope="row">Name:</th>
+                <td>John Doe</td>
+              </tr>
+              <tr>
+                <th scope="row">Mobile No:</th>
+                <td>+91-9192939495</td>
+              </tr>
+              <tr>
+                <th scope="row">Email Id:</th>
+                <td>JohnDoe@xyz.com</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="card__footer">Want to reset your password? <a href="#" class="text--primary">Tap here <img
+                src="./img/Mask Happly.svg" alt="" srcset=""></a></div>
         </div>
-        <p>Artificial Intelligence, Smarter Investments</p>
+
+        <hr class="separator">
+        <h3>Where do you want to proceed?</h3>
+        <div class="main__action">
+          <a href="#" class="btn btn--primary-outline">InvestorAI Intraday</a>
+          <a href="#" class="btn btn--primary-outline">InvestorAI Portfolios</a>
+        </div>
+        <h4 class="text--primary">Note:</h4>
+        <p>By clicking register you hereby agree to the <a href="#" class="text--primary">Terms and Conditions</a> and
+          <a href="#" class="text--primary">Privacy Policy</a> of StockHive India Pvt.
+          Ltd and Bridgeweave.
+        </p>
       </div>
-
-      <a href="#" class="btn btn--primary-outline btn--mobile">New User? Register here</a>
-
-      <div class="main__form">
-        <h1 class="main__title">
-          <span>Welcome Back </span>
-          <span class="text--primary">StockHiver </span>
-          <span>!</span>
-        </h1>
-        <h2 class="main__title--mobile h5 text--primary"><span>Login Now</span></h2>
-        <form action="">
-          <div class="form__content">
-
-            <div class="form__fields">
-              <div class="form__field form__field--border">
-                <input type="email" name="email" id="email" placeholder="Email Id">
-                <label for="email">
-                  <label for="email">
-                    <div class="hexagon hexagon--rotate">
-                      <div class="hexagon__content">
-                        <img src="./img/envelope.svg" alt="">
-                      </div>
-                    </div>
-                    Email
-                  </label>
-              </div>
-              <div class="form__field form__field--border">
-                <input type="password" name="password" id="password" placeholder="Password">
-                <label for="password">
-                  <div class="hexagon hexagon--rotate">
-                    <div class="hexagon__content">
-                      <img src="./img/touch-id.svg" alt="">
-                    </div>
-                  </div>
-                  Password
-                </label>
-              </div>
-
-              <div class="form__field-group">
-                <div class="form__field">
-                  <input type="checkbox" name="remember" id="remember">
-                  <label for="remember">
-                    <div class="hexagon"></div>
-                    Keep me signed in
-                  </label>
-                </div>
-                <div class="form__action">
-                  <button class="btn btn--primary">Log In</button>
-                  <a href="#" class="link-img text--gray"><span>Forgot Password?</span>
-                    <img src="./img/Mask Happly.svg" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
+      <div class="main__wallet">
+        <h2><span class="text--primary">Your</span><span> Wallet Details:</h2>
+        <div role="button" class="main__balance">
+          <img src="./img/wallet-icon.svg" alt="">
+          <div class="main__balance-text text--primary">
+            <h5 class="h1 value">1500</h5>
+            <p class="text h4">points</p>
           </div>
+          <img src="./img/Refresh Circle.svg" alt="">
+          <p class="wallet-footer">tap the wallet to refresh your balance</p>
+        </div>
+        <h3 class="underline"><span>Convert your points</span></h3>
+
+        <form action="" id="convert">
+          <div class="option">
+            <input type="radio" name="points" id="points-1" value="50" checked>
+            <label for="points-1">
+              <div class="hexagon hexagon--yellow"></div>
+              <span class="text">1 day basket</span>
+              <span class="text--primary">50 points</span>
+            </label>
+          </div>
+          <div class="option">
+            <input type="radio" name="points" id="points-2" value="100">
+            <label for="points-2">
+              <div class="hexagon hexagon--yellow"></div>
+              <span class="text">1 Month Subscription</span>
+              <span class="text--primary">100 points</span>
+            </label>
+          </div>
+          <div class="option">
+            <input type="radio" name="points" id="points-3" value="200">
+            <label for="points-3">
+              <div class="hexagon hexagon--yellow"></div>
+              <span class="text">3 Month Subscription</span>
+              <span class="text--primary">200 points</span>
+            </label>
+          </div>
+
+          <div class="convert-action">
+            <button type="submit" class="btn btn--primary-outline">Convert</button>
+          </div>
+
         </form>
-      </div>
-      <div class="main__illustration">
-        <h2 class="text--primary">Get ready to embark on an epic investing adventure powered by cutting-edge AI!</h2>
-        <p>StockHive's user-friendly platform is your ultimate sidekick, guiding you towards financial triumph. Log in
-          and let's conquer the market together!</p>
-        <img src="./img/Arranging Files.png" srcset="./img/Arranging Files.png 1x,
-                  ./img/Arranging Files@2x.png 2x,
-                  ./img/Arranging Files@3x.png 3x" alt="">
+
+        <div class="id-info">
+          <h3>Your InvestorAI Intraday code is:</h3>
+          <button type="button" id="copy-code" class="text--primary id-code h4"><span>ANJKHG123#XY</span><img
+              src="./img/copy-icon.svg" alt=""></button>
+          <span class="hint">Tap to copy</span>
+
+          <form action="" id="add-code">
+            <input type="text" class="input-code" placeholder="Have a StockHive code? Add here">
+            <button type="submit" class="">Add</button>
+          </form>
+
+        </div>
+
 
       </div>
     </div>
@@ -303,6 +316,8 @@
       </div>
     </div>
   </section>
+
+
 
   <footer>
     <div class="copyright"><span>StockHive2023</span><img src="./img/Hand Stars.svg" alt=""></div>
