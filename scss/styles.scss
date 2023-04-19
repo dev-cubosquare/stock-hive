@@ -99,6 +99,25 @@
 
 .main {
 
+  &__hamburger {
+    border: 0;
+    background: none;
+
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  &__header {
+
+
+    @media (max-width: 768px) {
+      @include flex(center, space-between);
+      width: 100%;
+
+    }
+  }
+
   &__header--mobile {
     position: relative;
     padding: 0 50px;
@@ -148,6 +167,7 @@
   }
 
   &__title {
+
     @media (max-width: 768px) {
       display: none;
     }
@@ -230,8 +250,23 @@
     position: relative;
     padding-bottom: 1rem;
 
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 0;
+
+      .refresh-icon {
+        display: none;
+      }
+
+    }
+
     .value {
-      margin: 0;
+      margin: auto 0 0.8rem;
+
+      @media (max-width: 600px) {
+        margin: 0;
+        margin-bottom: -10px;
+      }
     }
 
     .wallet-footer {
@@ -241,6 +276,12 @@
       bottom: 0;
       left: 10px;
       color: #666666;
+
+      @media (max-width: 600px) {
+        left: 0;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 
@@ -690,7 +731,7 @@
   table {
     text-align: left;
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 1rem;
 
     th {
       width: 90px;
@@ -706,6 +747,11 @@
     font-size: 0.8rem;
 
     text-align: right;
+
+    &--first {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
 
     a {
       display: inline-flex;
@@ -762,6 +808,10 @@
 
     .btn {
       width: 100%;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
     }
   }
 }
@@ -795,43 +845,38 @@
 #add-code {
   position: relative;
   margin-top: 1rem;
-  border-radius: 10px;
-  border: 1px solid #666666;
-  overflow: hidden;
+  text-align: center;
   width: 100%;
+  max-width: 400px;
 
   input {
+    text-align: center;
     font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border: 0;
+    padding: 0.6em 0.5em;
     width: 100%;
     border-radius: 10px;
-    text-align: center;
+    border: 1px solid #666666;
 
-    &:placeholder-shown {
-      ~button {
-        opacity: 0;
-      }
-    }
 
   }
 
 
 
   button {
-    position: absolute;
-    right: 0;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    background-color: $primary-color;
-    font-weight: 700;
+    margin-top: 0.5rem;
     border: 0;
-    color: #FFF;
-    cursor: pointer;
-    @include transition(opacity, background-color);
+    background-color: transparent;
+    font-weight: 600;
 
-    &:hover {
-      background-color: darken($primary-color, 10%);
+    &::after {
+      content: "+";
+      border: 2px solid #888;
+      color: #888;
+      padding: 0rem 0.2rem;
+      border-radius: 0.5rem;
+      margin-left: 0.3rem;
+      font-weight: 600;
+      font-size: 1rem;
     }
 
   }

@@ -81,7 +81,15 @@
   <main class="main__container">
     <div class="main__content">
       <div class="main__profile">
-        <h2><span class="text--primary">Hey</span><span> John Doe!</h2>
+        <h2 class="main__header">
+          <button class="main__hamburger">
+            <img src="./img/hamberg.svg" alt="">
+          </button>
+          <span>
+            <span class="text--primary">Hey</span><span> John Doe!</span>
+          </span>
+          <a class="logout-link" href="#">Logout</a>
+        </h2>
         <div class="card">
           <table>
             <tbody>
@@ -99,6 +107,7 @@
               </tr>
             </tbody>
           </table>
+          <div class="card__footer card__footer--first"><a href="#" class="">Tap to edit your profile</a></div>
           <div class="card__footer">Want to reset your password? <a href="#" class="text--primary">Tap here <img
                 src="./img/Mask Happly.svg" alt="" srcset=""></a></div>
         </div>
@@ -123,7 +132,7 @@
             <h5 class="h1 value">1500</h5>
             <p class="text h4">points</p>
           </div>
-          <img src="./img/Refresh Circle.svg" alt="">
+          <img class="refresh-icon" src="./img/Refresh Circle.svg" alt="">
           <p class="wallet-footer">tap the wallet to refresh your balance</p>
         </div>
         <h3 class="underline"><span>Convert your points</span></h3>
@@ -159,6 +168,10 @@
           </div>
 
         </form>
+        <form action="" id="add-code">
+          <input type="text" class="input-code" placeholder="Have a StockHive code? Add here">
+          <button type="submit" class="">Add</button>
+        </form>
 
         <div class="id-info">
           <h3>Your InvestorAI Intraday code is:</h3>
@@ -166,10 +179,6 @@
               src="./img/copy-icon.svg" alt=""></button>
           <span class="hint">Tap to copy</span>
 
-          <form action="" id="add-code">
-            <input type="text" class="input-code" placeholder="Have a StockHive code? Add here">
-            <button type="submit" class="">Add</button>
-          </form>
 
         </div>
 
