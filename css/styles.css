@@ -1176,3 +1176,112 @@ footer .copyright {
     transform: translate(-50%, 0);
   }
 }
+
+/* forgot password page css */
+
+.top-title h1 {
+  font-size: 44px;
+  font-weight: 900;
+  font-family: 'Roboto';
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.top-button button {
+  color: #EDBD13;
+  background-color: white;
+  border-radius: 10px;
+  padding: 9px 18px 9px 18px;
+  border: 1px solid black;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.subtitle h2 {
+  color: #EDBD13;
+  font-size: 30px;
+  text-align: center;
+}
+
+.content p {
+  font-size: 15px;
+  width: 90%;
+  margin: auto;
+  max-width: 539px;
+  text-align: center;
+}
+
+
+.email-button input[type="text"] {
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 50px;
+  border: 1px solid black;
+  padding: 15px 36px 15px 36px;
+}
+
+.email-button {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-link button {
+  color: #EDBD13;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.below-image {
+  display: flex;
+  justify-content: center;
+}
+
+html#forgot-pass{
+  padding: 0;
+}
+
+.reset-link {
+  display: flex;
+  justify-content: center;
+}
+
+section.forgotpass-mobile-1page {
+  display: none;
+}
+
+
+/* contact us page css */
+
+.contact-us-title h1 {
+  font-size: 40px;
+}
+
+.contact-us-button button {
+  color: #EDBD13;
+  background-color: white;
+  border-radius: 10px;
+  padding: 9px 18px 9px 18px;
+  border: 1px solid black;
+}
+
+.contact-us-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.namefield input[type="text"] {
+  padding: 11px;
+  border-radius: 10px;
+  border: 1px solid black;
+  outline: none;
+  position: relative;
+}
