@@ -1285,3 +1285,202 @@ section.forgotpass-mobile-1page {
   outline: none;
   position: relative;
 }
+
+.form .form__field {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 11px;
+}
+
+.form .hexagon__content {
+  position: absolute;
+  width: 77%;
+  height: 97%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form .hexagon svg {
+  stroke: #000;
+  height: 100%;
+  width: 77%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transition-property: fill, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.form .form__field {
+  margin-top: 20px;
+}
+
+.form textarea#message {
+  resize: none;
+  outline: none;
+  width: 100%;
+border: 0;
+  border-radius: 10px;
+}
+
+.below-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#message + label {
+  align-items: flex-start;
+}
+
+#message + label .hexagon {
+  height: 6.5rem;
+  transform: translateY(24%);
+}
+
+.below-left {
+  min-width: 30%;
+}
+
+.contact-us-title h1 {
+  font-size: 4rem;
+}
+
+html#contact-us {
+  padding: 0;
+}
+section.contact-us-responsive {
+  display: none;
+}
+section.contact-us {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  section.contact-us-responsive {
+    display: block !important;
+  }
+  section.contact-us {
+    display: none;
+}
+.responsive-container-title h1 {
+  font-size: 20px;
+  text-align: center;
+  width: 94%;
+  margin: auto;
+}
+.responsive-container-title {
+  padding: 50px 0px 0px 0px;
+}
+.form .form__field {
+  width: 80% !important;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit-button button {
+  background-color: #EDBD13;
+  color: white;
+  border: 1px solid black;
+  font-size: 20px;
+  width: 85%;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 11px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+.contact-us-image-container img {
+  width: 10rem;
+}
+.complete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rights-section1 h4 {
+  font-weight: 300;
+  margin: 0;
+}
+.allright p {
+  margin: 0;
+  font-weight: 300;
+}
+.allright {
+  display: flex;
+  justify-content: center;
+}
+.rights-section-logo img {
+  width: 27px !important;
+}
+.contact-us-image-container {
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.rights-section {
+  position: absolute;
+  bottom: 12px;
+}
+}
+
+.thanks-container-title h1 {
+  font-size: 20px;
+  text-align: center;
+  width: 69%;
+  font-weight: 500;
+  margin: auto;
+}
+.thanks-container-title {
+  padding: 131px 0px 0px 0px;
+}
+.thanks-container-button1 button {
+  background-color: #EDBD13;
+  color: white;
+  border: 1px solid black;
+  font-weight: 500;
+  width: 70%;
+  padding: 14px;
+  border-radius: 11px;
+  margin-top: 30px;
+}
+.thanks-container-button1 {
+  display: flex;
+  justify-content: center;
+}
+.thanks-container-button2 {
+  display: flex;
+  justify-content: center;
+}
+.thanks-container-button2 button {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  font-weight: 500;
+  width: 70%;
+  padding: 14px;
+  border-radius: 11px;
+  margin-top: 17px;
+}
+.contact-us-mobile2 {
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.contact-us-mobile2 img {
+  width: 18rem;
+}
+html#contact-us2 {
+  padding: 0;
+}
