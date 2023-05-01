@@ -940,7 +940,7 @@ footer .copyright {
   background-color: #FFF;
   border-radius: 15px;
   padding: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 .contact-form__content {
   display: flex;
@@ -1378,6 +1378,10 @@ section.contact-us {
 .form .form__field {
   width: 80% !important;
 }
+#message + label .hexagon {
+  height: 3.8rem;
+  transform: translateY(24%);
+}
 .form {
   display: flex;
   flex-direction: column;
@@ -1527,6 +1531,10 @@ html#contact-us2 {
   height: 92vh;
   background-repeat: no-repeat;
   background-color: black;
+  background-size: contain;
+}
+.right-images p {
+  margin: 0;
 }
 .landingsection1-logo {
   display: flex;
@@ -1569,33 +1577,33 @@ html#contact-us2 {
 }
 .right-images {
   position: absolute;
-  top: 43px;
+  top: 44px;
   text-align: center;
   display: flex;
   flex-direction: column;
   line-height: 2;
   align-items: center;
-  left: 38px;
+  left: 28px;
 }
 .right-images-2 {
   position: absolute;
-  top: 43px;
+  top: 54px;
   text-align: center;
   display: flex;
   flex-direction: column;
   line-height: 2;
   align-items: center;
-  left: 31px;
+  left: 36px;
 }
-.right-images-3 {
+.right-images {
   position: absolute;
-  top: 43px;
+  top: 52px;
   text-align: center;
   display: flex;
   flex-direction: column;
   line-height: 2;
   align-items: center;
-  left: 30px;
+  left: 41px;
 }
 .image1 {
   position: relative;
@@ -1603,11 +1611,34 @@ html#contact-us2 {
 .landingsection2-left h5 {
   margin: 0;
   font-size: 13px;
+  margin-bottom: 10px;
+}
+.right-images p {
+  margin: 0;
+  font-size: 16px;
+}
+.right-images img {
+  width: 52px;
+}
+.right-images-2 p {
+  margin: 0;
+  font-size: 16px;
+}
+.right-images-2 img {
+  width: 52px;
+}
+.right-images-3 p {
+  margin: 0;
+  font-size: 16px;
+}
+.right-images-3 img {
+  width: 52px;
 }
 .landingsection2-left h2 {
   font-weight: 900;
   font-size: 34px;
   margin: 0;
+  margin-bottom: 10px;
 }
 .landingsection2-left h3 {
   color: #EDBD13;
@@ -1623,24 +1654,34 @@ html#contact-us2 {
   padding-top: 50px;
 }
 .image1>img {
-  width: 198px;
-  height: 198px;
+  width: 222px;
+  height: 222px;
   object-fit: contain;
+}
+.right-images-3 {
+  position: absolute;
+  top: 52px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  align-items: center;
+  left: 31px;
 }
 .change-1{
   position: absolute;
   right: 120px;
   top: -45px;
 }
-.change-2{
+.change-2 {
   position: absolute;
   right: 20px;
-  top: 113px;
+  top: 129px;
 }
-.change-3{
+.change-3 {
   position: absolute;
-  right: 105px;
-  top: 275px;
+  right: 115px;
+  top: 308px;
 }
 .change{
   position: relative;
@@ -1677,7 +1718,7 @@ section.landingsection3 {
 }
 .left-images-3 {
   position: absolute;
-  top: 30px;
+  top: 22px;
   left: 40px;
   display: flex;
   flex-direction: column;
@@ -1696,11 +1737,13 @@ section.landingsection3 {
 .landingsection3-right h5 {
   margin: 0;
   font-size: 13px;
+  margin-bottom: 10px;
 }
 .landingsection3-right h2 {
   font-weight: 900;
   font-size: 34px;
   margin: 0;
+  margin-bottom: 10px;
 }
 .landingsection3-right h3 {
   color: #EDBD13;
@@ -1719,8 +1762,9 @@ section.landingsection3 {
 }
 .section3-image.change3-2 {
   position: absolute;
-  bottom: 181px;
+  bottom: 295px;
 }
+
 .landingsection3-left.change3 {
   position: relative;
   width: auto;
@@ -1730,12 +1774,8 @@ section.landingsection3 {
   left: 100px;
   top: -93px;
 }
-.section3-image.change3-2 {
-  position: absolute;
-  bottom: 181px;
-}
 section.landingsection4 {
-  height: 107vh;
+  height: 90vh;
   padding-top: 80px;
   background-size: contain;
   background-color: #D9D9D980;
@@ -1743,7 +1783,7 @@ section.landingsection4 {
 .landingsection4-container {
   background-image: url(../img/section4.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   display: flex;
   height: 80vh;
   justify-content: space-between;
@@ -1756,11 +1796,13 @@ section.landingsection4 {
 .landingsection4-left h5 {
   margin: 0;
   font-size: 13px;
+  margin-bottom: 10px;
 }
 .landingsection4-left h2 {
   font-weight: 900;
   font-size: 34px;
   margin: 0;
+  margin-bottom: 10px;
 }
 .landingsection4-left h3 {
   color: #EDBD13;
@@ -1869,10 +1911,20 @@ section.landingsection5 {
   font-weight: 900;
   font-size: 34px;
   margin: 0;
+  margin-bottom: 10px;
 }
 .landingsection5-right {
   width: 44%;
   padding-top: 50px;
+}
+.landingsection5-left-submit-button button {
+  background-color: #EDBD13;
+  font-size: 21px;
+  color: white;
+  font-weight: 600;
+  padding: 23px 60px 23px 60px;
+  border-radius: 14px;
+  border: 1px solid #EDBD13;
 }
 .section1-responsive {
   display: none;
@@ -2129,7 +2181,7 @@ section.landingsection3 {
 }
 section.landingsection4 {
   background-color: white;
-  height: 100vh;
+  height: 107vh;
   padding: 0;
 }
 .sec4-res-img {
@@ -2240,7 +2292,7 @@ section.landingsection5 {
     justify-content: center;
 }
 .section6-responsive-images img {
-  width: 31rem;
+  max-width: 100%;
 }
 .trademark-container {
   display: flex;
@@ -2251,11 +2303,11 @@ section.landingsection5 {
   color: white;
   margin: 0;
 }
-.mobile-copyright {
+.mobiles-copyright {
   display: flex;
   justify-content: center;
 }
-.mobile-copyright h5 {
+.mobiles-copyright h5 {
   color: white;
   margin: 0;
 }
