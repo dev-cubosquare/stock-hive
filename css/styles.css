@@ -329,6 +329,15 @@ footer .copyright {
   margin: 20px 0;
   border-bottom: 2.5px solid #f5f5f5;
 }
+html#regiser {
+  padding: 0;
+}
+html#profile {
+  padding: 0;
+}
+html#login {
+  padding: 0;
+}
 
 /**
  * Project: StockHive
@@ -1366,6 +1375,17 @@ section.contact-us {
   section.contact-us {
     display: none;
 }
+.contact-us-mobile2 {
+  align-items: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 30px;
+  bottom: 9;
+  left: 10rem !important;
+  bottom: 5px;
+}
 .responsive-container-title h1 {
   font-size: 20px;
   text-align: center;
@@ -1426,10 +1446,13 @@ section.contact-us {
   width: 27px !important;
 }
 .contact-us-image-container {
-  align-items: center;
   display: flex;
-  position: relative;
+  /* position: relative; */
+  position: absolute;
   flex-direction: column;
+  bottom: 0;
+  left: 10rem;
+  align-items: center;
 }
 .rights-section {
   position: absolute;
@@ -1480,7 +1503,10 @@ section.contact-us {
   display: flex;
   position: relative;
   flex-direction: column;
+  position: absolute;
   margin-top: 30px;
+  bottom: 9px;
+  left: 41rem;
 }
 .contact-us-mobile2 img {
   width: 18rem;
@@ -1532,6 +1558,30 @@ html#contact-us2 {
   background-repeat: no-repeat;
   background-color: black;
   background-size: contain;
+  background-position: center;
+}
+.rights-section-logo img {
+  width: 2rem;
+}
+.complete {
+  display: flex;
+  align-items: center;
+}
+.rights-section1 h4 {
+  margin: 0;
+  font-weight: 300;
+}
+.allright p {
+  margin: 0;
+  font-weight: 300;
+}
+.rights-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  /* left: 7rem; */
 }
 .right-images p {
   margin: 0;
@@ -1762,7 +1812,7 @@ section.landingsection3 {
 }
 .section3-image.change3-2 {
   position: absolute;
-  bottom: 295px;
+  bottom: 228px;
 }
 
 .landingsection3-left.change3 {
@@ -1860,7 +1910,7 @@ section.landingsection4 {
   right: 167px;
 }
 section.landingsection5 {
-  height: 100vh;
+  height: 102vh;
   padding-top: 80px;
   background-size: contain;
   /* background-color: white; */
@@ -2117,6 +2167,12 @@ section.landingsection3 {
   font-weight: 400;
   font-size: 15px;
 }
+.sec3-responsive-subtitle {
+  width: 90%;
+}
+.sec5-responsive-subtitle {
+  width: 90%;
+}
 .res-change {
   position: relative;
   width: auto;
@@ -2288,7 +2344,7 @@ section.landingsection5 {
   font-size: 21px;
 }
 .section6-responsive-images {
-    display: flex;
+    display: flex; 
     padding-top: 50px;
     justify-content: center;
 }
@@ -2314,6 +2370,7 @@ section.landingsection5 {
 }
 }
 
+
 /* page 1 css */
 
 html#page1 {
@@ -2322,6 +2379,7 @@ html#page1 {
 .page1-1 {
   position: relative;
   padding: 0;
+  max-width: 500px;
 }
 .page1-1 p {
   text-align: center;
@@ -2368,4 +2426,48 @@ footer.page1-3 {
 }
 .page1-3 span {
   color: black;
+}
+
+
+
+
+/* page2 css */
+.pag2-container-1-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6rem;
+  margin-bottom: 10px;
+}
+.pag2-container-1-1 img {
+  width: 3rem;
+}
+.pag2-container-1-1 p {
+  text-align: center;
+  padding-top: 5px;
+}
+.pag2-container-1-1-image img {
+  width: 1rem;
+}
+.pag2-container-1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+#landing1 p {
+  font-size: 16px;
+}
+.page2-container {
+  height: 60vh;
+  overflow: auto;
+}
+.main__logo p {
+  margin-bottom: 30px;
+}
+.main__back-link img {
+  display: none;
+}
+@media (max-width: 768px){
+  .main__back-link img {
+    display: block !important;
+  }
 }
