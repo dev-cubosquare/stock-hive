@@ -2270,6 +2270,7 @@ section.landingsection5 {
   height: auto;
   background-size: contain;
   background-color: #D9D9D980;
+  padding-top: 0;
 }
 .contacts__container {
   display: none;
@@ -2311,4 +2312,60 @@ section.landingsection5 {
   color: white;
   margin: 0;
 }
+}
+
+/* page 1 css */
+
+html#page1 {
+  padding: 0;
+}
+.page1-1 {
+  position: relative;
+  padding: 0;
+}
+.page1-1 p {
+  text-align: center;
+}
+.page1-1 p {
+  text-align: center;
+  padding-top: 17px;
+  width: auto;
+}
+.page1-1 p span {
+  color: #EDBD13;
+}
+.page1-2 {
+  border: 1px solid black;
+  display: flex;
+  margin-top: 24px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;
+  padding: 10px;
+  background-color: #e7e7e7c9;
+}
+.page1-2 h5 {
+  font-size: 14px;
+}
+.page1-2 img {
+  width: 1.5rem;
+}
+.page1-1-button button {
+  background-color: #EDBD13;
+  border: 1px solid black;
+  padding: 12px 90px 12px 90px;
+  font-size: 18px;
+  color: white;
+  margin-top: 17px;
+  border-radius: 13px;
+  width: 100%;
+}
+footer.page1-3 {
+  position: relative;
+  margin-top: 10px;
+  /* display: flex; */
+  /* align-items: center; */
+}
+.page1-3 span {
+  color: black;
 }
