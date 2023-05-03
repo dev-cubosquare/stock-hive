@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -62,7 +63,26 @@
         </div>
         <div class="section1-responsive">
             <div class="sec1-responsive-container">
-                <div class="sec1-responsive-sidelogo">
+                <div class="sec1-responsive-hidden-menu-wrapper" id="mobile-menu" style="display: none;">
+                    <div class="sec1-responsive-hidden-menu">
+                        <h5>Login to:</h5>
+                    <h4><a href="#">InvestorAI Intra Day</a></h4>
+                    <h4><a href="#">InvestorAI Portfolios</a></h4>
+
+                    <div class="sec1-responsive-hidden-submenu">
+                        <ul>
+                            <li><a href="#">Know Us</a></li>
+                            <li><a href="#">FAQ’s</a></li>
+                            <li><a href="#">Open a Demat Account</a></li>
+                            <li><a href="#">Partner With Us</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+                <div class="sec1-responsive-sidelogo" id="open-menu">
                     <img src="./img/sec1res-head1.png" alt="headlogo">
                 </div>
                 <div class="sec1-responsive-logo">
@@ -372,7 +392,21 @@
     <section class="landingsection5">
         <div class="landingsection5-container">
             <div class="landingsection5-left">
-                <div class="contacts__form">
+                <div class="thank-you" id="thank-you">
+                    <div class="thankyou-1">
+                        <h2>Thanks for Reaching Out! 🎉</h2>
+                        <h3>We're stoked to connect and explore partnership opportunities.</h3>
+                        <p>We appreciate you taking the time to share your inquiry with us. Our team is super excited to
+                            review your submission and discover how we can join forces. Expect a response from us<br>
+                            <span>within 48
+                                hours.</span><br>
+                            Get ready to level up together and make some waves in the investing world! 🚀💰</p>
+                    </div>
+                    <div class="thank-you-submitbutton">
+                        <button>Submit new inquiry</button>
+                    </div>
+                </div>
+                <div class="contacts__form" id="contact-hide">
                     <div class="contact-form shadow">
                         <form action="">
 
@@ -385,7 +419,11 @@
                                             Message
                                         </label>
                                     </div>
+                                    <div class="landingsection5-left-submit-button">
+                                        <button type="submit" id="send-btn">Submit your Interest</button>
+                                    </div>
                                 </div>
+                                
                                 <div class="contact-form--col">
                                     <div class="contact-form__field">
                                         <input type="text" name="name" id="name" placeholder="Name">
@@ -412,14 +450,14 @@
                                         </label>
                                     </div>
 
+                                    
+
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="landingsection5-left-submit-button">
-                    <button>Submit your Interest</button>
-                </div>
+                
             </div>
             <div class="landingsection5-right">
                 <h2>Collaborate and Thrive: Partner with StockHive 🤝</h2>
@@ -616,7 +654,10 @@
                                         </label>
                                     </div>
                                     <div class="contact-form__action">
+
+
                                         <button type="submit" class="btn btn--primary">Send</button>
+
                                     </div>
 
                                     <div class="contact-form__separator">
@@ -633,6 +674,11 @@
                         </form>
                     </div>
                 </div>
+                
+                <footer>
+                    <div class="copyright"><span>StockHive2023</span><img src="./img/Hand Stars.svg" alt=""></div>
+                    <div class="reserve"><span>allrightreserved</span></div>
+                </footer>
             </div>
         </div>
     </section>
@@ -680,12 +726,10 @@
         </div>
     </div>
 
-    <footer>
-        <div class="copyright"><span>StockHive2023</span><img src="./img/Hand Stars.svg" alt=""></div>
-        <div class="reserve"><span>allrightreserved</span></div>
-    </footer>
+    
     <!-- <div class="hexagon"></div> -->
     <script src="./js/scripts.js"></script>
 </body>
 
 </html>
+

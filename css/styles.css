@@ -1664,6 +1664,74 @@ section.contact-us {
   margin: auto;
 }
 
+.responsive-container-title {
+  padding: 50px 0px 0px 0px;
+}
+.form .form__field {
+  width: 80% !important;
+}
+#message + label .hexagon {
+  height: 3.8rem;
+  transform: translateY(24%);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit-button button {
+  background-color: #EDBD13;
+  color: white;
+  border: 1px solid black;
+  font-size: 20px;
+  width: 85%;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 11px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+.contact-us-image-container img {
+  width: 10rem;
+}
+.complete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rights-section1 h4 {
+  font-weight: 300;
+  margin: 0;
+}
+.allright p {
+  margin: 0;
+  font-weight: 300;
+}
+.allright {
+  display: flex;
+  justify-content: center;
+}
+.rights-section-logo img {
+  width: 27px !important;
+}
+.contact-us-image-container {
+  display: flex;
+  position: relative;
+  /* position: absolute; */
+  flex-direction: column;
+  bottom: 0;
+  /* left: 50%; */
+  align-items: center;
+  /* transform: translate(-50%); */
+}
+.rights-section {
+  position: absolute;
+  bottom: 12px;
+}
+
 .thanks-container-title {
   padding: 131px 0px 0px 0px;
 }
@@ -1770,6 +1838,7 @@ html#contact-us2 {
   border: 1px solid white;
   border-radius: 10px;
   padding: 6px;
+  border: transparent;
 }
 
 .header-top-button2 button {
@@ -1778,6 +1847,7 @@ html#contact-us2 {
   background-color: #EDBD13;
   border-radius: 10px;
   padding: 6px 34px 6px 35px;
+  border: transparent;
 }
 
 .header-top-button {
@@ -2890,6 +2960,107 @@ footer.page1-3 {
   }
 }
 
+.thankyou-1 {
+  background-color: white;
+  padding: 18px;
+  max-width: 350px;
+  border-radius: 12px;
+  border: transparent;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.thankyou-1 h2 {
+  text-align: center;
+  font-size: 32px;
+}
+.thankyou-1 h3 {
+  text-align: center;
+  color: #EDBD13;
+  font-size: 24px;
+  font-weight: 500;
+}
+.thankyou-1 p {
+  text-align: center;
+}
+.thankyou-1 span {
+  color: #EDBD13;
+}
+.thank-you-submitbutton button {
+  padding: 10px;
+  width: 100%;
+  margin-top: 14px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  background-color: #EDBD13;
+  border-radius: 10px;
+  border: transparent;
+}
+div#thank-you {
+  width: max-content;
+  display: none;
+}
+.form textarea#message {
+  resize: none;
+  outline: none;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  font-family: inherit;
+  padding: 1em 0.5em 1em 3.3em;
+  background-color: transparent;
+  height: 25vh;
+}
+.submit-button-1 button {
+  background-color: #EDBD13;
+  color: white;
+  border: 1px solid black;
+  font-size: 20px;
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 11px;
+  margin-left: 2.5rem;
+}
+
+.sec1-responsive-hidden-menu-wrapper{
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+  top: 0;
+  left: 0;
+}
+
+.sec1-responsive-hidden-menu {
+  height: 100%;
+  background-color: #EDBD13;
+  padding: 10px;
+  width: 75%;
+  border-radius: 0px 50px 50px 0px;
+}
+.sec1-responsive-hidden-menu h5 {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.sec1-responsive-hidden-menu h4 {
+  margin: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.sec1-responsive-hidden-submenu ul {
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 28px;
+}
 
 
 
