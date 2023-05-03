@@ -8,6 +8,9 @@
  * Version: 1.0.0
  */
 
+
+
+
 // get all hexagons placeholders
 const hexagons = document.querySelectorAll('.hexagon');
 
@@ -42,18 +45,58 @@ hexagons.forEach(hexagon => {
 
 var copyBtn = document.querySelector('#copy-code');
 
-copyBtn.addEventListener('click', function() {
-  var copyText = copyBtn.textContent;
+if(copyBtn !== null){
+  copyBtn.addEventListener('click', function() {
+    var copyText = copyBtn.textContent;
 
-  navigator.clipboard.writeText(copyText).then(function() {
-    var popup = document.createElement('div');
-    popup.classList.add('popup-notification');
-    popup.textContent = 'Copied';
-    document.body.appendChild(popup);
-    setTimeout(function() {
-      popup.remove();
-    }
-    , 2000);
+    navigator.clipboard.writeText(copyText).then(function() {
+      var popup = document.createElement('div');
+      popup.classList.add('popup-notification');
+      popup.textContent = 'Copied';
+      document.body.appendChild(popup);
+      setTimeout(function() {
+        popup.remove();
+      }
+      , 2000);
+    });
+  
   });
- 
+}
+
+jQuery(function($) {
+  $('#send-btn').click(function(e) {
+    e.preventDefault(); // Prevent the form from submitting
+    $('#contact-hide').hide(); // Hide the contact form
+    $('.thank-you').show(); // Show the thank-you message
+  });
+
+
+  $('#open-menu').click(function(){
+   $('#mobile-menu').show(function(){
+    $(this).css('transform', 'translateX(0)')
+   });
+  })
+
+  $('.sec1-responsive-hidden-menu-wrapper').click(function(){
+    $('#mobile-menu').css('transform', 'translateX(-100%)');
+    // setTimeout(() => {
+    //   $('#mobile-menu').hide(function(){
+    // }, 300);
+    // });
+   })
+
+  $('.sec1-responsive-hidden-menu').click(function(e){
+    e.stopPropagation();
+  })
+
 });
+
+
+
+// $(document).ready(function() {
+//   $('#send-btn').click(function(e) {
+//     e.preventDefault(); // Prevent the form from submitting
+//     $('.contacts__form').hide(); // Hide the contact form
+//     $('.thank-you').show(); // Show the thank-you message
+//   });
+// });
