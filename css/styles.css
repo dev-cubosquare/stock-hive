@@ -3345,6 +3345,7 @@ html#landpg2 {
   display: flex;
   border: 1px solid #EDBD13;
   border-radius: 10px;
+  padding-right: 10px;
 }
 .landpg2-sec3-tiles-1 {
   display: flex;
@@ -3363,4 +3364,11 @@ html#landpg2 {
   flex-direction: column;
   gap: 17px;
   padding-top: 4rem;
+}
+.landpg2-sec4-container{
+  background-image: url(../img/landpg2-sec4.png);
+    height: 111vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 3rem; */
 }
