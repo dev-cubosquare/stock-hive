@@ -89,6 +89,34 @@ jQuery(function($) {
     e.stopPropagation();
   })
 
+  $('.landpg2-sec3-tiles .tiles').click('.hexagon', function(){
+
+    if($(this).hasClass('expand')){
+      $(this).find('.answer').slideUp(300, () => {
+        $(this).removeClass('expand');
+      })
+    }else{
+      $(this).addClass('expand');
+      $(this).find('.answer').slideDown(300);
+    }
+
+
+  });
+
+  $(document).ready(function() {
+    $(".div3-left .hexagon").click(function() {
+      $(".div3-left-subcontainer").slideToggle();
+      $(".tiles-sec4").toggleClass("expand");
+    });
+  
+    $(".div3-right .hexagon").click(function() {
+      $(".div3-right-subcontainer").slideToggle();
+      $(".tiles-sec4-2").toggleClass("expand");
+    });
+  });
+  
+  
+
 });
 
 
