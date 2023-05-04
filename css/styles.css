@@ -3232,7 +3232,7 @@ html#landpg2 {
   background-image: url(../img/landpg2-sec1.png);
   height: 100vh;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding-top: 3rem;
 }
 
@@ -3306,7 +3306,7 @@ html#landpg2 {
   }
   .landpg2-sec3-container{
     background-image: url(../img/landpg2-sec3.png);
-    height: 111vh;
+    height: 124vh;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 3rem;
@@ -3339,25 +3339,32 @@ html#landpg2 {
   padding-top: 4rem;
 }
 .tiles img {
-  width: 3rem;
+  width: 3.7rem;
+  position: absolute;
+  top: -4px;
+  left: -15px;
 }
 .tiles {
   display: flex;
   border: 1px solid #EDBD13;
   border-radius: 10px;
   padding-right: 10px;
+  position: relative;
 }
 .landpg2-sec3-tiles-1 {
   display: flex;
-  gap: 11px;
+  gap: 24px;
 }
 .landpg2-sec3-tiles-2 {
   display: flex;
-  gap: 10px;
+  gap: 24px;
 }
 .landpg2-sec3-tiles-3 {
   display: flex;
-  gap: 10px;
+  gap: 24px;
+}
+.tiles p {
+  margin-left: 43px;
 }
 .landpg2-sec3-tiles {
   display: flex;
