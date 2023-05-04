@@ -1642,8 +1642,8 @@ section.contact-us {
 
   .contact-us-image-container {
     display: flex;
-    /* position: relative; */
-    position: absolute;
+    position: relative;
+    /* position: absolute; */
     flex-direction: column;
     bottom: 0;
     left: 10rem;
@@ -1664,22 +1664,22 @@ section.contact-us {
   margin: auto;
 }
 
-.responsive-container-title {
+/* .responsive-container-title {
   padding: 50px 0px 0px 0px;
-}
-.form .form__field {
+} */
+/* .form .form__field {
   width: 80% !important;
-}
-#message + label .hexagon {
+} */
+/* #message + label .hexagon {
   height: 3.8rem;
   transform: translateY(24%);
-}
-.form {
+} */
+/* .form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.submit-button button {
+} */
+/* .submit-button button {
   background-color: #EDBD13;
   color: white;
   border: 1px solid black;
@@ -1688,49 +1688,49 @@ section.contact-us {
   padding: 14px;
   margin-top: 20px;
   border-radius: 11px;
-}
+} */
 
-.submit-button {
+/* .submit-button {
   display: flex;
   justify-content: center;
-}
-.contact-us-image-container img {
+} */
+/* .contact-us-image-container img {
   width: 10rem;
-}
-.complete {
+} */
+/* .complete {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.rights-section1 h4 {
+} */
+/* .rights-section1 h4 {
   font-weight: 300;
   margin: 0;
-}
-.allright p {
+} */
+/* .allright p {
   margin: 0;
   font-weight: 300;
-}
-.allright {
+} */
+/* .allright {
   display: flex;
   justify-content: center;
-}
-.rights-section-logo img {
+} */
+/* .rights-section-logo img {
   width: 27px !important;
 }
 .contact-us-image-container {
   display: flex;
   position: relative;
-  /* position: absolute; */
+  position: absolute;
   flex-direction: column;
   bottom: 0;
-  /* left: 50%; */
+  left: 50%;
   align-items: center;
-  /* transform: translate(-50%); */
-}
-.rights-section {
+  transform: translate(-50%);
+} */
+/* .rights-section {
   position: absolute;
   bottom: 12px;
-}
+} */
 
 .thanks-container-title {
   padding: 131px 0px 0px 0px;
