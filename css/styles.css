@@ -1565,9 +1565,9 @@ section.contact-us {
     position: absolute;
     margin-top: 30px;
     bottom: 9;
-    left: 10rem !important;
+    left: 3rem !important;
     bottom: 5px;
-  }
+   } 
 
   .responsive-container-title h1 {
     font-size: 20px;
@@ -1646,7 +1646,7 @@ section.contact-us {
     /* position: absolute; */
     flex-direction: column;
     bottom: 0;
-    left: 10rem;
+    /* left: 10rem; */
     align-items: center;
   }
 
@@ -1771,7 +1771,7 @@ section.contact-us {
 .contact-us-mobile2 {
   align-items: center;
   display: flex;
-  position: relative;
+  /* position: relative; */
   flex-direction: column;
   position: absolute;
   margin-top: 30px;
@@ -3371,4 +3371,8 @@ html#landpg2 {
     background-repeat: no-repeat;
     background-size: cover;
     /* padding: 3rem; */
+}
+.header-top-button2 a {
+  display: flex;
+  align-items: center;
 }
