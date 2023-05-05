@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,10 +16,10 @@
         <div class="header-top">
             <div class="header-top-links">
                 <ul>
-                    <li><a href="#">Know More</a></li>
-                    <li><a href="#">Our Product</a></li>
-                    <li><a href="#">Partner With Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#know-more">Know More</a></li>
+                    <li><a href="#our-product">Our Product</a></li>
+                    <li><a href="#partner-with-us">Partner With Us</a></li>
+                    <li><a href="#contact-with-us">Contact Us</a></li>
                 </ul>
             </div>
             <div class="header-top-button">
@@ -26,7 +27,7 @@
                     <button>Apply SH Code <img src="./img/Cart 5.png" alt="cart5"></button>
                 </div>
                 <div class="header-top-button2">
-                    <button>Login <img src="./img/User Heart.png" alt="cart5"></button>
+                    <button><a href="./login.html"> Login <img src="./img/User Heart.png" alt="cart5"></a></button>
                 </div>
             </div>
         </div>
@@ -66,20 +67,20 @@
                 <div class="sec1-responsive-hidden-menu-wrapper" id="mobile-menu" style="display: none;">
                     <div class="sec1-responsive-hidden-menu">
                         <h5>Login to:</h5>
-                    <h4><a href="#">InvestorAI Intra Day</a></h4>
-                    <h4><a href="#">InvestorAI Portfolios</a></h4>
+                        <h4><a href="#">InvestorAI Intra Day</a></h4>
+                        <h4><a href="#">InvestorAI Portfolios</a></h4>
 
-                    <div class="sec1-responsive-hidden-submenu">
-                        <ul>
-                            <li><a href="#">Know Us</a></li>
-                            <li><a href="#">FAQ’s</a></li>
-                            <li><a href="#">Open a Demat Account</a></li>
-                            <li><a href="#">Partner With Us</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
+                        <div class="sec1-responsive-hidden-submenu">
+                            <ul>
+                                <li><a href="#">Know Us</a></li>
+                                <li><a href="#">FAQ’s</a></li>
+                                <li><a href="#">Open a Demat Account</a></li>
+                                <li><a href="#">Partner With Us</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="./contact-us.html">Contact Us</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="sec1-responsive-sidelogo" id="open-menu">
@@ -113,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section class="landingsection2">
+    <section class="landingsection2" id="know-more">
         <div class="landingsection2-container">
             <div class="landingsection2-left">
                 <h5>What we do | Apart from making you look cool</h5>
@@ -188,7 +189,7 @@
             </div>
         </div>
     </section>
-    <section class="landingsection3">
+    <section class="landingsection3" id="our-product">
         <div class="landingsection3-container">
             <div class="landingsection3-left change3">
                 <div class="landingsection3-left-container">
@@ -389,7 +390,7 @@
         </div>
     </section>
 
-    <section class="landingsection5">
+    <section class="landingsection5" id="partner-with-us">
         <div class="landingsection5-container">
             <div class="landingsection5-left">
                 <div class="thank-you" id="thank-you">
@@ -400,7 +401,8 @@
                             review your submission and discover how we can join forces. Expect a response from us<br>
                             <span>within 48
                                 hours.</span><br>
-                            Get ready to level up together and make some waves in the investing world! 🚀💰</p>
+                            Get ready to level up together and make some waves in the investing world! 🚀💰
+                        </p>
                     </div>
                     <div class="thank-you-submitbutton">
                         <button>Submit new inquiry</button>
@@ -423,7 +425,7 @@
                                         <button type="submit" id="send-btn">Submit your Interest</button>
                                     </div>
                                 </div>
-                                
+
                                 <div class="contact-form--col">
                                     <div class="contact-form__field">
                                         <input type="text" name="name" id="name" placeholder="Name">
@@ -450,14 +452,14 @@
                                         </label>
                                     </div>
 
-                                    
+
 
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                
+
             </div>
             <div class="landingsection5-right">
                 <h2>Collaborate and Thrive: Partner with StockHive 🤝</h2>
@@ -536,7 +538,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contact-with-us">
         <div class="contacts__container">
             <div class="contacts__content">
                 <div class="contacts__others">
@@ -674,7 +676,7 @@
                         </form>
                     </div>
                 </div>
-                
+
                 <footer>
                     <div class="copyright"><span>StockHive2023</span><img src="./img/Hand Stars.svg" alt=""></div>
                     <div class="reserve"><span>allrightreserved</span></div>
@@ -726,10 +728,9 @@
         </div>
     </div>
 
-    
+
     <!-- <div class="hexagon"></div> -->
     <script src="./js/scripts.js"></script>
 </body>
 
 </html>
-
