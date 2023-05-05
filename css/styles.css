@@ -4013,3 +4013,62 @@ html#landpg2 {
   left: 5px;
   height: 90%;
 }
+
+/* page3 css */
+.page3-link a {
+  background-color: #EDBD13;
+  color: white;
+}
+.page3-link {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+section.page3-sec1 {
+  padding: 0 10rem;
+}
+.page3-sec1-top h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+}
+.page3-sec1-top span {
+  color: #EDBD13;
+}
+.page3-sec1-top p {
+  text-align: center;
+  font-size: 16px;
+  max-width: 70%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.page3-sec1-content h3 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #EDBD13;
+}
+.page3-sec1-content p {
+  font-size: 16px;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  section.page3-sec1 {
+    padding: 0 1rem;
+  }
+  .page3-sec1-top p {
+    max-width: 100%;
+}
+.page3-sec1-top p {
+  max-width: 100%;
+}
+}
+.page4-sec1-top h1 {
+  font-size: 44px;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 5rem;
+}
+.page4-sec1-top span {
+  color: #EDBD13;
+}
