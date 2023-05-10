@@ -1447,7 +1447,7 @@ html#forgot-pass {
 }
 
 section.forgotpass-mobile-1page {
-  display: none;
+  display: block;
 }
 
 
@@ -2391,6 +2391,13 @@ section.landingsection5 {
 }
 
 @media (max-width: 768px) {
+
+  #trademark {
+    padding-top: 54px;
+    position: absolute;
+    bottom: 9px;
+    left: 7rem;
+}
   .section1-responsive {
     display: block !important;
   }
