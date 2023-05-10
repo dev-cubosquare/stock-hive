@@ -4059,15 +4059,15 @@ section.page3-sec1 {
   section.page3-sec1 {
     padding: 0 1rem;
   }
-.page3-sec1-content p {
+#page3-sec1-content p {
   font-size: 16px;
-  width: 100% !important;
+  width: 100%;
 }
 .page3-sec1-top p {
   max-width: 100%;
 }
-.page4-sec1-top h1{
-  font-size: 24px !important;
+#page4-sec1-top h1{
+  font-size: 24px;
 }
 }
 .page4-sec1-top h1 {
@@ -4076,8 +4076,8 @@ section.page3-sec1 {
   font-weight: 900;
   margin-bottom: 5rem;
 }
-.page4-sec1-top span {
-  color: #EDBD13 !important;
+#page4-sec1-top span {
+  color: #EDBD13;
 }
 
 html#page3 .reserve span {
