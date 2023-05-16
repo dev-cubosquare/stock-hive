@@ -4093,3 +4093,161 @@ html#page3 .reserve span {
 html#page4 .reserve span {
   color: black;
 }
+
+/* 404 page erro */
+
+html#\34 04-page {
+  padding: 0;
+}
+.container-404 h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+  margin: 0;
+}
+
+.container-404 h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #EDBD13;
+  margin: 10px 0px;
+}
+
+.container-404 p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  width: 50%;
+  margin: auto;
+}
+
+.container-404 button.btn {
+  background-color: transparent;
+  color: #EDBD13;
+}
+
+.container-404 a {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  color: #EDBD13;
+  margin-top: 60px;
+}
+
+.container-404 {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-404 img {
+  width: 27rem;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+  .container-404 img {
+    display: none;
+}
+}
+
+/* Password reset page */
+
+html#reset-password-page {
+  padding: 0;
+}
+.container-reset {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-reset h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+  margin: 0;
+}
+
+.container-reset h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: #EDBD13;
+  margin: 10px 0px;
+}
+
+.container-reset p {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  width: 50%;
+  margin: auto;
+}
+.reset-page-button {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.container-reset .btn:hover {
+  background-color: transparent;
+}
+
+.container-reset button.btn {
+  background-color: transparent;
+  color: #EDBD13;
+  font-size: 16px;
+  padding: 0.9em 2.5em;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.form-container-img img {
+  width: 38rem;
+}
+
+@media (max-width: 768px) {
+  .form-container-img img{
+    display: none;
+  }
+  .container-reset p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    width: 80%;
+    margin: auto;
+    line-height: 1.5;
+}
+.container-reset button.btn {
+  background-color: transparent;
+  color: #EDBD13;
+  font-size: 16px;
+  padding: 0.9em 2.5em;
+  white-space: initial;
+}
+.form__content {
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1vw;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  margin-top: 0px;
+}
+}
