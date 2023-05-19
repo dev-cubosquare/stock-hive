@@ -2396,8 +2396,11 @@ section.landingsection5 {
     padding-top: 54px;
     position: absolute;
     bottom: 9px;
-    left: 7rem;
-}
+    /* left: 7rem; */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   .section1-responsive {
     display: block !important;
   }
@@ -4026,22 +4029,27 @@ html#landpg2 {
   background-color: #EDBD13;
   color: white;
 }
+
 .page3-link {
   padding: 20px;
   display: flex;
   justify-content: flex-end;
 }
+
 section.page3-sec1 {
   padding: 0 10rem;
 }
+
 .page3-sec1-top h1 {
   font-size: 40px;
   text-align: center;
   font-weight: 900;
 }
+
 .page3-sec1-top span {
   color: #EDBD13;
 }
+
 .page3-sec1-top p {
   text-align: center;
   font-size: 16px;
@@ -4049,11 +4057,13 @@ section.page3-sec1 {
   margin: auto;
   margin-bottom: 100px;
 }
+
 .page3-sec1-content h3 {
   font-size: 30px;
   font-weight: 500;
   color: #EDBD13;
 }
+
 .page3-sec1-content p {
   font-size: 16px;
   width: 80%;
@@ -4062,27 +4072,33 @@ section.page3-sec1 {
 @media (max-width: 768px) {
   .page3-sec1-top h1 {
     font-size: 24px;
-}
+  }
+
   section.page3-sec1 {
     padding: 0 1rem;
   }
-#page3-sec1-content p {
-  font-size: 16px;
-  width: 100%;
+
+  #page3-sec1-content p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .page3-sec1-top p {
+    max-width: 100%;
+  }
+
+  #page4-sec1-top h1 {
+    font-size: 24px;
+  }
 }
-.page3-sec1-top p {
-  max-width: 100%;
-}
-#page4-sec1-top h1{
-  font-size: 24px;
-}
-}
+
 .page4-sec1-top h1 {
   font-size: 44px;
   text-align: center;
   font-weight: 900;
   margin-bottom: 5rem;
 }
+
 #page4-sec1-top span {
   color: #EDBD13;
 }
@@ -4090,15 +4106,17 @@ section.page3-sec1 {
 html#page3 .reserve span {
   color: black;
 }
+
 html#page4 .reserve span {
   color: black;
 }
 
 /* 404 page erro */
 
-html#\34 04-page {
+html#404-page {
   padding: 0;
 }
+
 .container-404 h1 {
   font-size: 40px;
   text-align: center;
@@ -4114,13 +4132,16 @@ html#\34 04-page {
   margin: 10px 0px;
 }
 
+
 .container-404 p {
   font-size: 16px;
   text-align: center;
   font-weight: 400;
-  width: 50%;
+  width: 85%;
   margin: auto;
+  max-width: 700px;
 }
+
 
 .container-404 button.btn {
   background-color: transparent;
@@ -4152,7 +4173,7 @@ html#\34 04-page {
 @media (max-width: 768px) {
   .container-404 img {
     display: none;
-}
+  }
 }
 
 /* Password reset page */
@@ -4160,6 +4181,7 @@ html#\34 04-page {
 html#reset-password-page {
   padding: 0;
 }
+
 .container-reset {
   padding-top: 30px;
   padding-left: 10px;
@@ -4191,6 +4213,7 @@ html#reset-password-page {
   width: 50%;
   margin: auto;
 }
+
 .reset-page-button {
   margin-top: 50px;
   display: flex;
@@ -4220,9 +4243,10 @@ html#reset-password-page {
 }
 
 @media (max-width: 768px) {
-  .form-container-img img{
+  .form-container-img img {
     display: none;
   }
+
   .container-reset p {
     font-size: 16px;
     text-align: center;
@@ -4230,24 +4254,27 @@ html#reset-password-page {
     width: 80%;
     margin: auto;
     line-height: 1.5;
-}
-.container-reset button.btn {
-  background-color: transparent;
-  color: #EDBD13;
-  font-size: 16px;
-  padding: 0.9em 2.5em;
-  white-space: initial;
-}
-.form__content {
-  max-width: 500px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 1vw;
-}
-.form-container {
-  display: flex;
-  justify-content: center;
-  gap: 0px;
-  margin-top: 0px;
-}
+  }
+
+  .container-reset button.btn {
+    background-color: transparent;
+    color: #EDBD13;
+    font-size: 16px;
+    padding: 0.9em 2.5em;
+    white-space: initial;
+  }
+
+  .form__content {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1vw;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 0px;
+  }
 }
